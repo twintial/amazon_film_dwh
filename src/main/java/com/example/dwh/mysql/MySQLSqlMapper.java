@@ -11,5 +11,5 @@ import java.util.List;
 @Mapper
 public interface MySQLSqlMapper {
     List<LinkedHashMap<String, Object>> queryWithSql(@Param("sql") String sql);
-    List<String> test();
+//    List<String> test();
 }

@@ -1,6 +1,5 @@
 package com.example.dwh.controller;
 
-
 import com.example.dwh.mysql.MySQLSqlMapper;
 import com.example.dwh.service.SqlService;
 import lombok.extern.slf4j.Slf4j;
@@ -22,14 +21,20 @@ public class SQLController {
     MySQLSqlMapper mySQLSqlMapper;
     @PostMapping("/sql")
     public String searchWithSQL(@RequestParam("sql") String sql, Model model){
-        log.info(sql);
-        model = SqlService.queryWithSql(sql, model);
-        return "result";
+        try {
+            log.info("SQL语句：" + sql);
+            model = SqlService.queryWithSql(sql, model);
+            return "result";
+        }
+        catch (Exception e){
+            log.info(e.toString());
+            return "/search";
+        }
     }
 
-    @ResponseBody
-    @GetMapping("/test")
-    public List<String> test(){
-        return mySQLSqlMapper.test();
-    }
+//    @ResponseBody
+//    @GetMapping("/test")
+//    public List<String> test(){
+//        return mySQLSqlMapper.test();
+//    }
 }

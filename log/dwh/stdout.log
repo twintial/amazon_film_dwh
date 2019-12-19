@@ -1302,62 +1302,68 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2019-12-19 21:23:13,526 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28086 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:23:13,529 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:23:14,121 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:23:14,135 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 5ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:23:14,415 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:23:14,664 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:23:14,675 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:23:14,676 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:23:14,776 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:23:14,777 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1196 ms
-2019-12-19 21:23:15,126 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:23:15,642 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:23:15,642 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:23:15,643 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 7 classes
-2019-12-19 21:23:15,654 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:23:15,770 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:23:15,978 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:23:15,981 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:23:16,067 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:23:16,071 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.306 seconds (JVM running for 3.763)
-2019-12-19 21:23:20,000 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:32:54,461 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28180 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:32:54,466 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:32:55,158 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:32:55,177 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 11ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:32:55,478 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:32:55,744 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:32:55,755 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:32:55,756 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:32:55,849 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:32:55,849 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1333 ms
-2019-12-19 21:32:55,966 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 48] jdbc:mysql://cdb-ezjh4cma.bj.tencentcdb.com:10210/Baike?useUnicode=true&characterEncoding=utf-8
-2019-12-19 21:32:56,182 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:32:56,738 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:32:56,739 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:32:56,739 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:32:56,747 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:32:56,844 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:32:57,065 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:32:57,068 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:32:57,144 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:32:57,148 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.22 seconds (JVM running for 3.603)
-2019-12-19 21:33:25,315 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-19 21:33:25,317 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
-2019-12-19 21:33:25,326 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 9 ms
-2019-12-19 21:33:25,948 [ERROR] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user ''@'58.41.207.83' (using password: YES)
-### The error may exist in file [/Users/hailuo/IdeaProjects/dwh/target/classes/mapper/MySQLSqlMapper.xml]
+2019-12-19 21:45:04,241 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 16588 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 21:45:04,245 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 21:45:04,780 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 21:45:04,801 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 14ms. Found 0 Neo4j repository interfaces.
+2019-12-19 21:45:05,065 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 21:45:05,293 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 21:45:05,301 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 21:45:05,301 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 21:45:05,439 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 21:45:05,439 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1154 ms
+2019-12-19 21:45:05,827 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 21:45:06,056 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 21:45:06,057 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 21:45:06,057 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 21:45:06,068 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 21:45:06,164 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 21:45:06,379 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 21:45:06,382 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 21:45:06,448 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 21:45:06,450 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 2.986 seconds (JVM running for 4.581)
+2019-12-19 21:48:08,460 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 12236 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 21:48:08,464 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 21:48:08,981 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 21:48:09,000 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 13ms. Found 0 Neo4j repository interfaces.
+2019-12-19 21:48:09,219 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 21:48:09,407 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 21:48:09,415 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 21:48:09,415 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 21:48:09,545 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 21:48:09,546 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1044 ms
+2019-12-19 21:48:09,864 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 21:48:10,070 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 21:48:10,070 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 21:48:10,071 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 21:48:10,080 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 21:48:10,180 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 21:48:10,388 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 21:48:10,390 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 21:48:10,453 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 21:48:10,456 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 2.598 seconds (JVM running for 3.711)
+2019-12-19 21:48:13,751 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 21:48:13,751 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-19 21:48:13,757 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
+2019-12-19 21:48:14,461 [ERROR] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in file [C:\Users\19134\Desktop\amazon_film_dwh\target\classes\mapper\MySQLSqlMapper.xml]
 ### The error may involve com.example.dwh.mysql.MySQLSqlMapper.test
 ### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user ''@'58.41.207.83' (using password: YES)] with root cause
-java.sql.SQLException: Access denied for user ''@'58.41.207.83' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.] with root cause
+com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2121)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2145)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1310)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:967)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
 	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
@@ -1381,33 +1387,33 @@ java.sql.SQLException: Access denied for user ''@'58.41.207.83' (using password:
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
 	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
 	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
-	at com.sun.proxy.$Proxy70.test(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at com.sun.proxy.$Proxy71.test(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy71.test(Unknown Source)
+	at com.sun.proxy.$Proxy72.test(Unknown Source)
 	at com.example.dwh.controller.SQLController.test(SQLController.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
@@ -1453,110 +1459,102 @@ java.sql.SQLException: Access denied for user ''@'58.41.207.83' (using password:
 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-2019-12-19 21:35:57,646 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:36:01,640 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28193 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:36:01,643 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:36:02,235 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:36:02,253 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 10ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:36:02,528 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:36:02,775 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:36:02,786 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:36:02,787 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:36:02,886 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:36:02,886 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1196 ms
-2019-12-19 21:36:02,997 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 48] jdbc:mysql://cdb-ezjh4cma.bj.tencentcdb.com:10210/Baike?useUnicode=true&characterEncoding=utf-8
-2019-12-19 21:36:02,997 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 50] null
-2019-12-19 21:36:02,998 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 52] abcd1234
-2019-12-19 21:36:03,211 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:36:03,730 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:36:03,730 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:36:03,731 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:36:03,740 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:36:03,836 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:36:04,051 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:36:04,053 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:36:04,128 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:36:04,132 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.15 seconds (JVM running for 3.498)
-2019-12-19 21:36:21,220 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:36:24,922 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28203 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:36:24,926 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:36:25,570 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:36:25,589 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 11ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:36:25,871 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:36:26,112 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:36:26,132 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:36:26,132 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:36:26,232 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:36:26,232 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1260 ms
-2019-12-19 21:36:26,347 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 48] jdbc:mysql://cdb-ezjh4cma.bj.tencentcdb.com:10210/Baike?useUnicode=true&characterEncoding=utf-8
-2019-12-19 21:36:26,347 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 50] root
-2019-12-19 21:36:26,348 [INFO] [main] com.example.dwh.MySqlDruidConfig [MySqlDruidConfig.java : 52] abcd1234
-2019-12-19 21:36:26,566 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:36:27,081 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:36:27,082 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:36:27,083 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:36:27,091 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:36:27,188 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:36:27,411 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:36:27,414 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:36:27,488 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:36:27,492 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.092 seconds (JVM running for 3.484)
-2019-12-19 21:36:34,513 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-19 21:36:34,515 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
-2019-12-19 21:36:34,523 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 8 ms
-2019-12-19 21:36:41,278 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:37:17,626 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28212 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:37:17,629 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:37:18,299 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:37:18,319 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 11ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:37:18,615 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:37:18,857 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:37:18,868 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:37:18,869 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:37:18,966 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:37:18,967 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1286 ms
-2019-12-19 21:37:19,254 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:37:19,844 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:37:19,845 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:37:19,845 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:37:19,853 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:37:19,950 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:37:20,204 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:37:20,207 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:37:20,300 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:37:20,304 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.193 seconds (JVM running for 3.576)
-2019-12-19 21:37:24,075 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-19 21:37:24,076 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
-2019-12-19 21:37:24,083 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
-2019-12-19 21:37:24,135 [ERROR] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.dwh.mysql.MySQLSqlMapper.test] with root cause
-org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.dwh.mysql.MySQLSqlMapper.test
-	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
-	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
-	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
-	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
-	at com.sun.proxy.$Proxy70.test(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-19 21:49:31,069 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 7244 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 21:49:31,073 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 21:49:31,693 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 21:49:31,714 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 13ms. Found 0 Neo4j repository interfaces.
+2019-12-19 21:49:31,919 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 21:49:32,110 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 21:49:32,117 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 21:49:32,117 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 21:49:32,239 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 21:49:32,240 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1088 ms
+2019-12-19 21:49:32,565 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 21:49:32,792 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 21:49:32,792 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 21:49:32,793 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 21:49:32,804 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 21:49:32,906 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 21:49:33,108 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 21:49:33,111 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 21:49:33,164 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 21:49:33,166 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 2.653 seconds (JVM running for 3.707)
+2019-12-19 21:49:39,387 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 21:49:39,387 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-19 21:49:39,391 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 4 ms
+2019-12-19 21:49:40,139 [ERROR] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value '?й??????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in file [C:\Users\19134\Desktop\amazon_film_dwh\target\classes\mapper\MySQLSqlMapper.xml]
+### The error may involve com.example.dwh.mysql.MySQLSqlMapper.test
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value '?й??????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.] with root cause
+com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '?й??????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2121)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2145)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1310)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:967)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:787)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1122)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1118)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:104)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy71.test(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy71.test(Unknown Source)
+	at com.sun.proxy.$Proxy72.test(Unknown Source)
 	at com.example.dwh.controller.SQLController.test(SQLController.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
@@ -1602,130 +1600,90 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-2019-12-19 21:37:25,233 [ERROR] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.dwh.mysql.MySQLSqlMapper.test] with root cause
-org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.dwh.mysql.MySQLSqlMapper.test
-	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
-	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
-	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
-	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
-	at com.sun.proxy.$Proxy70.test(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy71.test(Unknown Source)
-	at com.example.dwh.controller.SQLController.test(SQLController.java:33)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-2019-12-19 21:37:29,694 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:37:38,578 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28221 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:37:38,582 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:37:39,286 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:37:39,307 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 12ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:37:39,651 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:37:39,959 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:37:39,969 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:37:39,970 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:37:40,077 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:37:40,077 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1439 ms
-2019-12-19 21:37:40,434 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:37:41,015 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:37:41,016 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:37:41,017 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:37:41,027 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:37:41,132 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:37:41,368 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:37:41,371 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:37:41,453 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:37:41,457 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.464 seconds (JVM running for 3.829)
-2019-12-19 21:37:42,155 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-19 21:37:42,156 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
-2019-12-19 21:37:42,163 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 7 ms
-2019-12-19 21:37:45,083 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:38:06,850 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 28235 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
-2019-12-19 21:38:06,853 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2019-12-19 21:38:07,495 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
-2019-12-19 21:38:07,513 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 10ms. Found 0 Neo4j repository interfaces.
-2019-12-19 21:38:07,789 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-19 21:38:08,005 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
-2019-12-19 21:38:08,015 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2019-12-19 21:38:08,015 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-19 21:38:08,103 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2019-12-19 21:38:08,103 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1207 ms
-2019-12-19 21:38:08,445 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
-2019-12-19 21:38:08,999 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
-2019-12-19 21:38:08,999 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
-2019-12-19 21:38:09,000 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
-2019-12-19 21:38:09,009 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
-2019-12-19 21:38:09,106 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-19 21:38:09,298 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
-2019-12-19 21:38:09,301 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
-2019-12-19 21:38:09,380 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-19 21:38:09,384 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.025 seconds (JVM running for 3.435)
-2019-12-19 21:38:12,125 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-19 21:38:12,126 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
-2019-12-19 21:38:12,136 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 10 ms
-2019-12-19 21:38:15,760 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-19 21:53:47,779 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 11252 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 21:53:47,785 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 21:53:48,673 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 21:53:48,698 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 17ms. Found 0 Neo4j repository interfaces.
+2019-12-19 21:53:48,973 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 21:53:49,262 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 21:53:49,273 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 21:53:49,273 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 21:53:49,425 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 21:53:49,426 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1568 ms
+2019-12-19 21:53:49,785 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 21:53:50,018 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 21:53:50,018 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 21:53:50,019 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 21:53:50,029 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 21:53:50,129 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 21:53:50,361 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 21:53:50,366 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 21:53:50,449 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 21:53:50,452 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.495 seconds (JVM running for 4.911)
+2019-12-19 21:54:05,968 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 21:54:05,969 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-19 21:54:05,973 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 4 ms
+2019-12-19 21:56:50,653 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 10676 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 21:56:50,658 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 21:56:51,336 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 21:56:51,358 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 15ms. Found 0 Neo4j repository interfaces.
+2019-12-19 21:56:51,616 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 21:56:51,852 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 21:56:51,860 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 21:56:51,861 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 21:56:52,003 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 21:56:52,003 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1299 ms
+2019-12-19 21:56:52,360 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 21:56:52,575 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 21:56:52,575 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 21:56:52,576 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 21:56:52,586 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 21:56:52,680 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 21:56:52,888 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 21:56:52,891 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 21:56:52,947 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 21:56:52,949 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 2.965 seconds (JVM running for 4.226)
+2019-12-19 21:57:01,426 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 21:57:01,427 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-19 21:57:01,430 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 3 ms
+2019-12-19 21:57:21,120 [INFO] [http-nio-8080-exec-4] com.example.dwh.controller.SQLController [SQLController.java : 25] select * from dim_actor limit 100
+2019-12-19 21:58:00,751 [INFO] [http-nio-8080-exec-3] com.example.dwh.controller.SQLController [SQLController.java : 25] select * from dim_film_title limit 100
+2019-12-19 22:01:27,897 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on DESKTOP-ALHPJ0K with PID 5644 (C:\Users\19134\Desktop\amazon_film_dwh\target\classes started by 19134 in C:\Users\19134\Desktop\amazon_film_dwh)
+2019-12-19 22:01:27,901 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-19 22:01:28,401 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-19 22:01:28,419 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 12ms. Found 0 Neo4j repository interfaces.
+2019-12-19 22:01:28,626 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-19 22:01:28,809 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-19 22:01:28,816 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-19 22:01:28,817 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-19 22:01:28,939 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-19 22:01:28,939 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1005 ms
+2019-12-19 22:01:29,226 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-19 22:01:29,416 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-19 22:01:29,416 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-19 22:01:29,416 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-19 22:01:29,425 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-19 22:01:29,518 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-19 22:01:29,721 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-19 22:01:29,724 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-19 22:01:29,782 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-19 22:01:29,784 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 2.481 seconds (JVM running for 3.669)
+2019-12-19 22:01:36,162 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 22:01:36,162 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-19 22:01:36,168 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
+2019-12-19 22:01:44,042 [INFO] [http-nio-8080-exec-3] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select xxx
+
+2019-12-19 22:01:44,869 [INFO] [http-nio-8080-exec-3] com.example.dwh.controller.SQLController [SQLController.java : 30] org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'xxx' in 'field list'
+### The error may exist in file [C:\Users\19134\Desktop\amazon_film_dwh\target\classes\mapper\MySQLSqlMapper.xml]
+### The error may involve com.example.dwh.mysql.MySQLSqlMapper.queryWithSql-Inline
+### The error occurred while setting parameters
+### SQL: select xxx
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'xxx' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'xxx' in 'field list'
+2019-12-19 22:02:10,480 [INFO] [http-nio-8080-exec-6] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_actor limit 100
+2019-12-19 22:03:35,722 [INFO] [http-nio-8080-exec-2] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_review limit 100
