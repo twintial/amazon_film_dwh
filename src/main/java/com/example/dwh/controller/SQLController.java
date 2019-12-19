@@ -28,7 +28,7 @@ public class SQLController {
         }
         catch (Exception e){
             log.info(e.toString());
-            return "/search";
+            return "search";
         }
     }
 
