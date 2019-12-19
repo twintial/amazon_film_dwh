@@ -14,7 +14,7 @@ mybatis:
   config-location: classpath:mybatis-config.xml
 
 hive:
-  url: jdbc:hive2://106.13.95.102:10000/amazon_film
+  url:gi
   driver-class-name: org.apache.hive.jdbc.HiveDriver
   type: com.alibaba.druid.pool.DruidDataSource
   user: root
