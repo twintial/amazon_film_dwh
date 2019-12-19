@@ -3,18 +3,18 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://cdb-ezjh4cma.bj.tencentcdb.com:10210/Baike?useUnicode=true&characterEncoding=utf-8
-    username:
-    password:
+    username: root
+    password: abcd1234
     driverClassName: com.mysql.cj.jdbc.Driver
   thymeleaf:
     cache: false
 mybatis:
-  mapper-locations:
+  mapper-locations: classpath:mapper/*.xml
   type-aliases-package:
   config-location: classpath:mybatis-config.xml
 
 hive:
-  url: jdbc:hive2://106.13.95.102:10000/amazon_film
+#  url: jdbc:hive2://106.13.95.102:10000/amazon_film
   driver-class-name: org.apache.hive.jdbc.HiveDriver
   type: com.alibaba.druid.pool.DruidDataSource
   user: root

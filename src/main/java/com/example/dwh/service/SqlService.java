@@ -1,21 +1,26 @@
 package com.example.dwh.service;
 
 import com.example.dwh.hive.HiveSqlMapper;
+import com.example.dwh.mysql.MySQLSqlMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @Service
 public class SqlService {
+//    @Autowired
+//    HiveSqlMapper hiveSqlMapper;
     @Autowired
-    HiveSqlMapper hiveSqlMapper;
+    MySQLSqlMapper mySQLSqlMapper;
 
     public Model queryWithSql(String sql, Model model){
-        List<Map<String, Object>> results = hiveSqlMapper.queryWithSql(sql);
+//        List<Map<String, Object>> results = hiveSqlMapper.queryWithSql(sql);
+        List<LinkedHashMap<String, Object>> results = mySQLSqlMapper.queryWithSql(sql);
         List<String> attrs = new ArrayList<>();
         List<List<Object>> object = new ArrayList<>();
         if (results.size() < 1){
