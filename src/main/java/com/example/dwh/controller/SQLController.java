@@ -1,7 +1,7 @@
 package com.example.dwh.controller;
 
 
-import com.example.dwh.hive.SqlService;
+import com.example.dwh.service.SqlService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Slf4j
 @Controller
 @RequestMapping("/search")
-class SQLController {
+public class SQLController {
     @Autowired
-    SqlService sqlService;
+    SqlService SqlService;
     @PostMapping("/sql")
     public String searchWithSQL(@RequestParam("sql") String sql, Model model){
-        model = sqlService.queryWithSql(sql, model);
-        return "search";
+        model = SqlService.queryWithSql(sql, model);
+        return "result";
     }
 }

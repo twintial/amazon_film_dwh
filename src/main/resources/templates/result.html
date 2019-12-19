@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>亚马逊电影</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/store.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <span th:text="共有件商品"></span>
+                </div>
+            </div>
+            <div class="container">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th scope="col" th:each="attr:${attrs}" th:text="${attr}"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="values:${object}">
+                            <td th:each="value:${values}" th:text="${value}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
