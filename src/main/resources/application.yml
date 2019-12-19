@@ -1,6 +1,8 @@
 server:
   port: 8080
 spring:
+  mvc:
+    static-path-pattern: /static/**
   thymeleaf:
     cache: false
 mybatis:
@@ -9,7 +11,7 @@ mybatis:
   config-location: classpath:mybatis-config.xml
 
 mysql:
-  url: jdbc:mysql://localhost:3306/dwh?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  url: jdbc:mysql://192.168.3.22:3306/dwh?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
   user: root
   password: abcd@1234
   driverClassName: com.mysql.cj.jdbc.Driver
