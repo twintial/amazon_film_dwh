@@ -10,52 +10,31 @@
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#" th:text="${account}"></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/home/admin">商品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/log/admin">销售记录</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/logout">logout</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0" action="/home/admin/all">
-                    <input class="form-control mr-sm-2" type="search" name="itemName" placeholder="输入商品名" aria-label="Search" th:value="${searchName}">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
-                </form>
-            </div>
-        </nav>
+        <div>
+            <form method="post" action="/search/sql">
+                <div class="form-group">
+                    <label for="sql">请输入sql语句</label>
+                    <textarea class="form-control" rows="3" id="sql" name="sql"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
         <div>
             <div class="card">
                 <div class="card-body">
-                    <span th:text="共有 + ${itemAmount} + 件商品"></span>
+                    <span th:text="共有件商品"></span>
                 </div>
             </div>
             <div class="container">
                 <table class="table ">
                     <thead>
                         <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">商品名称</th>
-                            <th scope="col">销售量</th>
-                            <th scope="col">进价</th>
-                            <th scope="col">单价</th>
-                            <th scope="col">库存</th>
+                            <th scope="col" th:each="attr:${attrs}" th:text="${attr}"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr th:each="item:${itemList}" th:id="${item.item_id}">
-                            <th th:text="${item.item_id}" scope="row"></th>
-                            <td th:text="${item.item_name}"></td>
-                            <td th:text="${item.sales}"></td>
-                            <td th:text="${item.cost_price}"></td>
-                            <td th:text="${item.unit_price}"></td>
-                            <td th:text="${item.stock}" th:id="'stock' + ${item.item_id}"></td>
+                        <tr th:each="values:${object}">
+                            <td th:each="value:${values}" th:text="${value}"></td>
                         </tr>
                     </tbody>
                 </table>

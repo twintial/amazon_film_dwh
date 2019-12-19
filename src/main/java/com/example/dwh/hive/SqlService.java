@@ -17,23 +17,22 @@ public class SqlService {
     private JdbcTemplate hiveDruidTemplate;
 
     public Model queryWithSql(String sql, Model model){
-
         List<Map<String, Object>> results = hiveDruidTemplate.queryForList(sql);
 
-        List<String> attr = new ArrayList<>();
-        List<List<Object>> values = new ArrayList<>();
+        List<String> attrs = new ArrayList<>();
+        List<List<Object>> object = new ArrayList<>();
         if (results.size() < 1){
-            model.addAttribute("attr", attr);
-            model.addAttribute("values", values);
+            model.addAttribute("attrs", attrs);
+            model.addAttribute("object", object);
             return model;
         }
         Map<String, Object> r1 = results.get(0);
-        attr.addAll(r1.keySet());
+        attrs.addAll(r1.keySet());
         for (Map<String, Object> r : results){
-            values.add(new ArrayList<>(r.values()));
+            object.add(new ArrayList<>(r.values()));
         }
-        model.addAttribute("attr", attr);
-        model.addAttribute("values", values);
+        model.addAttribute("attrs", attrs);
+        model.addAttribute("object", object);
         return model;
     }
 }
