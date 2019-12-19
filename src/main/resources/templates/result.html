@@ -7,28 +7,82 @@
         <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="/static/canvasjs-2.3.2/canvasjs.min.js"></script>
     </head>
     <body>
-        <div>
-            <div class="card">
-                <div class="card-body">
-                    <span th:text="共有件商品"></span>
-                </div>
-            </div>
-            <div class="container">
-                <table class="table ">
-                    <thead>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <span th:text="共有xxx条记录"></span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#compare">
+                                    比较
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="table ">
+                        <thead>
                         <tr>
                             <th scope="col" th:each="attr:${attrs}" th:text="${attr}"></th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr th:each="values:${object}">
                             <td th:each="value:${values}" th:text="${value}"></td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="compare" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="chartContainer" style="height:400px; width: 300px;"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "三种数据库性能对比"
+                },
+                axisY: {
+                    title: "查询时间 (s)",
+                    suffix: "s",
+                    includeZero: false
+                },
+                axisX: {
+                    title: "数据库"
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,##0.00#\"s\"",
+                    dataPoints: [
+                        { label: "hive", y: 7.1, indexLabel: "1012312"},
+                        { label: "mysql", y: [[${mysqlTime}]], indexLabel: "[[${mysqlCount}]]"},
+                        { label: "neo4j", y: 5.00, indexLabel: "1012312"},
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
 </html>
