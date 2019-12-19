@@ -8,6 +8,7 @@
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="/static/canvasjs-2.3.2/canvasjs.min.js"></script>
+        <script src="/static/bootstrap-paginator.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -25,16 +26,17 @@
                     </div>
                     <table class="table ">
                         <thead>
-                        <tr>
-                            <th scope="col" th:each="attr:${attrs}" th:text="${attr}"></th>
-                        </tr>
+                            <tr>
+                                <th scope="col" th:each="attr:${attrs}" th:text="${attr}"></th>
+                            </tr>
                         </thead>
-                        <tbody>
-                        <tr th:each="values:${object}">
-                            <td th:each="value:${values}" th:text="${value}"></td>
-                        </tr>
+                        <tbody id="content">
+<!--                            <tr th:each="values:${object}">-->
+<!--                                <td th:each="value:${values}" th:text="${value}"></td>-->
+<!--                            </tr>-->
                         </tbody>
                     </table>
+                    <ul class="pagination"></ul>
                 </div>
             </div>
         </div>
@@ -83,6 +85,43 @@
             });
             chart.render();
 
+            $('.pagination').bootstrapPaginator({//将id为pageLimit的ul元素设置为分页插件
+                currentPage: 1,//设置当前页码
+                size: "small",//设置控件的显示大小，
+                bootstrapMajorVersion: 3,//当前版本
+                alignment: "right",//设置控件的对齐方式
+                totalPages: Math.ceil(objects.length/pageSize),//设置总页数.
+                itemTexts: function (type, page, current) {//控制每个操作按钮的显示文字。是个函数，有3个参数: type, page, current。
+                    //通过这个参数我们就可以将操作按钮上的英文改为中文，如first-->首页，last-->尾页。
+                    switch (type) {
+                        case "first": return "首页" + " <li class='page-item page-link'></li>";
+                        case "prev": return "<" + " <li class='page-item page-link'></li>";
+                        case "next": return ">" + " <li class='page-item page-link'></li>";
+                        case "last": return "末页" + " <li class='page-item page-link'></li>";
+                        case "page": return page + " <li class='page-item page-link'></li>";
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {//为操作按钮绑定click事件。
+                    paging(page-1)
+                }
+            });
         }
+    </script>
+    <script th:inline="javascript">
+        var objects = [[${object}]]
+        var pageSize = 100
+        function paging(pageNum){
+            var content = $('#content')
+            content.empty()
+            for (var i = pageNum * pageSize; i < (pageNum+1)*pageSize && objects.length; i++){
+                var tr = $("<tr></tr>")
+                for (var j = 0; j < objects[i].length; j++){
+                    var td = $("<td></td>").text(objects[i][j])
+                    tr.append(td)
+                }
+                content.append(tr)
+            }
+        }
+        paging(0)
     </script>
 </html>
