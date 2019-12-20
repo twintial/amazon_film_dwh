@@ -34,7 +34,7 @@ mysql:
   poolPreparedStatements: true
 
 hive:
-#  url: jdbc:hive2://106.13.95.102:10000/amazon_film
+  url: jdbc:hive2://106.13.95.102:10000/amazon_film
   driver-class-name: org.apache.hive.jdbc.HiveDriver
   type: com.alibaba.druid.pool.DruidDataSource
   user: root

@@ -1576,3 +1576,151 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2019-12-20 01:59:45,131 [WARN] [http-nio-8080-exec-8] o.s.web.servlet.mvc.support.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java : 199] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
 2019-12-20 01:59:52,899 [INFO] [http-nio-8080-exec-9] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_review limit 100000
 2019-12-20 02:01:23,856 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-20 14:01:13,298 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 41622 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
+2019-12-20 14:01:13,302 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-20 14:01:14,003 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-20 14:01:14,026 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 13ms. Found 0 Neo4j repository interfaces.
+2019-12-20 14:01:14,345 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-20 14:01:14,621 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-20 14:01:14,631 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-20 14:01:14,631 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-20 14:01:14,734 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-20 14:01:14,734 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1381 ms
+2019-12-20 14:01:15,106 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-20 14:01:15,523 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-20 14:01:15,524 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-20 14:01:15,525 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-20 14:01:15,534 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-20 14:01:15,630 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-20 14:01:15,869 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-20 14:01:15,876 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-20 14:01:15,965 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-20 14:01:15,970 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.475 seconds (JVM running for 3.957)
+2019-12-20 14:01:20,828 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-20 14:01:20,830 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-20 14:01:20,847 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 16 ms
+2019-12-20 14:01:32,645 [INFO] [http-nio-8080-exec-3] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_actor
+2019-12-20 14:01:35,250 [INFO] [http-nio-8080-exec-3] org.apache.hive.jdbc.Utils [Utils.java : 310] Supplied authorities: 106.13.95.102:10000
+2019-12-20 14:01:35,251 [INFO] [http-nio-8080-exec-3] org.apache.hive.jdbc.Utils [Utils.java : 397] Resolved authority: 106.13.95.102:10000
+2019-12-20 14:01:35,262 [ERROR] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet] [DirectJDKLog.java : 175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: org/apache/hadoop/conf/Configuration] with root cause
+java.lang.ClassNotFoundException: org.apache.hadoop.conf.Configuration
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.apache.hive.jdbc.HiveConnection.createBinaryTransport(HiveConnection.java:478)
+	at org.apache.hive.jdbc.HiveConnection.openTransport(HiveConnection.java:201)
+	at org.apache.hive.jdbc.HiveConnection.<init>(HiveConnection.java:176)
+	at org.apache.hive.jdbc.HiveDriver.connect(HiveDriver.java:105)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1464)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1529)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:787)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1122)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1118)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:104)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:371)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:490)
+	at com.example.dwh.hive.HiveSqlMapper.queryWithSql(HiveSqlMapper.java:21)
+	at com.example.dwh.hive.HiveSqlMapper$$FastClassBySpringCGLIB$$fe85316b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.example.dwh.hive.HiveSqlMapper$$EnhancerBySpringCGLIB$$25db06b7.queryWithSql(<generated>)
+	at com.example.dwh.service.SqlService.queryWithSql(SqlService.java:33)
+	at com.example.dwh.controller.SQLController.searchWithSQL(SQLController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+2019-12-20 14:01:58,497 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-20 14:16:37,976 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 55] Starting DwhApplication on shenjunjiedeMacBook-Pro.local with PID 41682 (/Users/hailuo/IdeaProjects/dwh/target/classes started by hailuo in /Users/hailuo/IdeaProjects/dwh)
+2019-12-20 14:16:37,980 [INFO] [main] com.example.dwh.DwhApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2019-12-20 14:16:38,650 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 127] Bootstrapping Spring Data Neo4j repositories in DEFAULT mode.
+2019-12-20 14:16:38,680 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 187] Finished Spring Data repository scanning in 20ms. Found 0 Neo4j repository interfaces.
+2019-12-20 14:16:39,021 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-20 14:16:39,288 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2019-12-20 14:16:39,299 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2019-12-20 14:16:39,300 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-20 14:16:39,417 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2019-12-20 14:16:39,417 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1392 ms
+2019-12-20 14:16:39,776 [WARN] [main] o.s.b.a.d.n.Neo4jDataAutoConfiguration$Neo4jWebConfiguration [Neo4jDataAutoConfiguration.java : 115] spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2019-12-20 14:16:40,599 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 182] Starting Post-processing phase
+2019-12-20 14:16:40,600 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 136] Building byLabel lookup maps
+2019-12-20 14:16:40,601 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 163] Building interface class map for 8 classes
+2019-12-20 14:16:40,610 [INFO] [main] org.neo4j.ogm.metadata.DomainInfo [DomainInfo.java : 239] Post-processing complete
+2019-12-20 14:16:40,707 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-20 14:16:40,959 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 176] No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2019-12-20 14:16:40,962 [INFO] [main] org.springframework.data.neo4j.mapping.Neo4jMappingContext [Neo4jMappingContext.java : 80] Neo4jMappingContext initialisation completed
+2019-12-20 14:16:41,078 [INFO] [main] org.mortbay.log [Slf4jLog.java : 67] Logging to Logger[org.mortbay.log] via org.mortbay.log.Slf4jLog
+2019-12-20 14:16:41,102 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-20 14:16:41,107 [INFO] [main] com.example.dwh.DwhApplication [StartupInfoLogger.java : 61] Started DwhApplication in 3.996 seconds (JVM running for 4.488)
+2019-12-20 14:17:13,522 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-20 14:17:13,523 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2019-12-20 14:17:13,536 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 12 ms
+2019-12-20 14:17:13,606 [INFO] [http-nio-8080-exec-1] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_actor
+2019-12-20 14:17:14,338 [INFO] [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 847] {dataSource-1} inited
+2019-12-20 14:17:16,097 [INFO] [http-nio-8080-exec-1] org.apache.hive.jdbc.Utils [Utils.java : 325] Supplied authorities: 106.13.95.102:10000
+2019-12-20 14:17:16,098 [INFO] [http-nio-8080-exec-1] org.apache.hive.jdbc.Utils [Utils.java : 444] Resolved authority: 106.13.95.102:10000
+2019-12-20 14:17:17,138 [INFO] [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 847] {dataSource-2} inited
+2019-12-20 14:19:16,217 [INFO] [http-nio-8080-exec-8] com.example.dwh.controller.SQLController [SQLController.java : 25] SQL语句：select * from dim_actor
+2019-12-20 14:20:34,998 [INFO] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 208] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-20 14:20:35,092 [INFO] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1608] {dataSource-2} closed
+2019-12-20 14:20:35,096 [INFO] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1608] {dataSource-1} closed

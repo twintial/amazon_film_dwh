@@ -15,32 +15,37 @@ import java.util.Map;
 @Slf4j
 @Service
 public class SqlService {
-//    @Autowired
-//    HiveSqlMapper hiveSqlMapper;
+    @Autowired
+    HiveSqlMapper hiveSqlMapper;
     @Autowired
     MySQLSqlMapper mySQLSqlMapper;
 
     public Model queryWithSql(String sql, Model model){
-//        List<Map<String, Object>> results = hiveSqlMapper.queryWithSql(sql);
 
         double startTime = System.nanoTime();
-        List<LinkedHashMap<String, Object>> results = mySQLSqlMapper.queryWithSql(sql);
+        List<LinkedHashMap<String, Object>> mysqlResults = mySQLSqlMapper.queryWithSql(sql);
         double endTime = System.nanoTime();
         double mysqlTime =(endTime-startTime)/1000000000;
         model.addAttribute("mysqlTime", mysqlTime);
-        model.addAttribute("mysqlCount", results.size());
+        model.addAttribute("mysqlCount", mysqlResults.size());
 
+        startTime = System.nanoTime();
+        List<Map<String, Object>> hiveResults = hiveSqlMapper.queryWithSql(sql);
+        endTime = System.nanoTime();
+        double hiveTime =(endTime-startTime)/1000000000;
+        model.addAttribute("hiveTime", hiveTime);
+        model.addAttribute("hiveCount", hiveResults.size());
 
         List<String> attrs = new ArrayList<>();
         List<List<Object>> object = new ArrayList<>();
-        if (results.size() < 1){
+        if (mysqlResults.size() < 1){
             model.addAttribute("attrs", attrs);
             model.addAttribute("object", object);
             return model;
         }
-        Map<String, Object> r1 = results.get(0);
+        Map<String, Object> r1 = mysqlResults.get(0);
         attrs.addAll(r1.keySet());
-        for (Map<String, Object> r : results){
+        for (Map<String, Object> r : mysqlResults){
             object.add(new ArrayList<>(r.values()));
         }
         model.addAttribute("attrs", attrs);

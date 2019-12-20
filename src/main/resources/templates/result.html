@@ -77,9 +77,9 @@
                     type: "column",
                     yValueFormatString: "#,##0.00#\"s\"",
                     dataPoints: [
-                        { label: "hive", y: 7.1, indexLabel: "1012312"},
+                        { label: "hive", y: [[${hiveTime}]], indexLabel: "[[${hiveCount}]]"},
                         { label: "mysql", y: [[${mysqlTime}]], indexLabel: "[[${mysqlCount}]]"},
-                        { label: "neo4j", y: 5.00, indexLabel: "1012312"},
+                        { label: "neo4j", y: 0.00, indexLabel: "1012312"},
                     ]
                 }]
             });
