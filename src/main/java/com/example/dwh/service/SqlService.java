@@ -29,12 +29,7 @@ public class SqlService {
         model.addAttribute("mysqlTime", mysqlTime);
         model.addAttribute("mysqlCount", mysqlResults.size());
 
-        startTime = System.nanoTime();
-        List<Map<String, Object>> hiveResults = hiveSqlMapper.queryWithSql(sql);
-        endTime = System.nanoTime();
-        double hiveTime =(endTime-startTime)/1000000000;
-        model.addAttribute("hiveTime", hiveTime);
-        model.addAttribute("hiveCount", hiveResults.size());
+        List<Map<String, Object>> hiveResults = hiveSqlMapper.queryWithSql(sql, model);
 
         List<String> attrs = new ArrayList<>();
         List<List<Object>> object = new ArrayList<>();

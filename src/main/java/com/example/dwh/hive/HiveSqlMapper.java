@@ -17,8 +17,13 @@ public class HiveSqlMapper {
     @Qualifier("hiveDruidTemplate")
     private JdbcTemplate hiveDruidTemplate;
 
-    public List<Map<String, Object>> queryWithSql(String sql){
+    public List<Map<String, Object>> queryWithSql(String sql, Model model){
+        double startTime = System.nanoTime();
         List<Map<String, Object>> results = hiveDruidTemplate.queryForList(sql);
+        double endTime = System.nanoTime();
+        double time =(endTime-startTime)/1000000000;
+        model.addAttribute("hiveTime", time);
+        model.addAttribute("hiveCount", results.size());
         return results;
     }
 }
