@@ -79,7 +79,7 @@
                     dataPoints: [
                         { label: "hive", y: [[${hiveTime}]], indexLabel: "[[${hiveCount}]]"},
                         { label: "mysql", y: [[${mysqlTime}]], indexLabel: "[[${mysqlCount}]]"},
-                        { label: "neo4j", y: 0.00, indexLabel: "1012312"},
+                        { label: "neo4j", y: [[${neo4jTime}]], indexLabel: "[[${neo4jCount}]]"},
                     ]
                 }]
             });
@@ -109,6 +109,7 @@
     </script>
     <script th:inline="javascript">
         var objects = [[${object}]]
+        console.log(objects)
         var pageSize = 100
         function paging(pageNum){
             var content = $('#content')

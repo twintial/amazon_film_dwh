@@ -22,38 +22,43 @@ public class SqlService {
     @Autowired
     Neo4jQuery neo4jQuery;
 
+    public void addResultToModel(List<Map<String, Object>> result, Model model){
+        List<String> attrs = new ArrayList<>();
+        List<List<Object>> object = new ArrayList<>();
+        if (result.size() < 1){
+            model.addAttribute("attrs", attrs);
+            model.addAttribute("object", object);
+            return;
+        }
+        Map<String, Object> r1 = result.get(0);
+        attrs.addAll(r1.keySet());
+        for (Map<String, Object> r : result){
+            object.add(new ArrayList<>(r.values()));
+        }
+        model.addAttribute("attrs", attrs);
+        model.addAttribute("object", object);
+    }
+
     public Model queryWithSql(String sql,String cypher, Model model){
 
         double startTime = System.nanoTime();
 //        List<LinkedHashMap<String, Object>> mysqlResults = mySQLSqlMapper.queryWithSql(sql);
-        List<LinkedHashMap<String, Object>> mysqlResults=new ArrayList<LinkedHashMap<String,Object>>();
+        List<LinkedHashMap<String, Object>> mysqlResults=new ArrayList<>();
         double endTime = System.nanoTime();
         double mysqlTime =(endTime-startTime)/1000000000;
         model.addAttribute("mysqlTime", mysqlTime);
         model.addAttribute("mysqlCount", mysqlResults.size());
 
+        model.addAttribute("hiveTime", mysqlTime);
+        model.addAttribute("hiveCount", mysqlResults.size());
 
-        NeoResult x=neo4jQuery.query(cypher);
-
-        model.addAttribute("neo4jTime", x.time);
-        model.addAttribute("neo4jNum",x.num);
-
+        List<Map<String, Object>> neo4jResult = neo4jQuery.query(cypher, model);
+        addResultToModel(neo4jResult, model);
+        System.out.println(model.asMap());
 //        List<Map<String, Object>> hiveResults = hiveSqlMapper.queryWithSql(sql, model);
 //
-//        List<String> attrs = new ArrayList<>();
-//        List<List<Object>> object = new ArrayList<>();
-//        if (mysqlResults.size() < 1){
-//            model.addAttribute("attrs", attrs);
-//            model.addAttribute("object", object);
-//            return model;
-//        }
-//        Map<String, Object> r1 = mysqlResults.get(0);
-//        attrs.addAll(r1.keySet());
-//        for (Map<String, Object> r : mysqlResults){
-//            object.add(new ArrayList<>(r.values()));
-//        }
-//        model.addAttribute("attrs", attrs);
-//        model.addAttribute("object", object);
+
+
         return model;
     }
 }
