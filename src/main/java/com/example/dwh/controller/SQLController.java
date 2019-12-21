@@ -20,10 +20,11 @@ public class SQLController {
     @Autowired
     MySQLSqlMapper mySQLSqlMapper;
     @PostMapping("/sql")
-    public String searchWithSQL(@RequestParam("sql") String sql, Model model){
+    public String searchWithSQL(@RequestParam("sql") String sql, @RequestParam("cypher") String cypher, Model model){
         try {
             log.info("SQL语句：" + sql);
-            model = SqlService.queryWithSql(sql, model);
+            log.info("cypher语句：" + cypher);
+            model = SqlService.queryWithSql(sql, cypher,model);
             return "result";
         }
         catch (Exception e){
