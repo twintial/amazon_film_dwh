@@ -23,10 +23,10 @@ public class Neo4jQuery {
                 List<String> dep2key = Lists.newArrayList(record.get(key).keys());
                 if (dep2key.size() != 0){
                     for (String key2 : dep2key){
-                        object.put(key2, record.get(key).get(key2));
+                        object.put(key2, record.get(key).get(key2).toString());
                     }
                 }else {
-                    object.put(key, record.get(key));
+                    object.put(key, record.get(key).toString());
                 }
             }
             result.add(object);

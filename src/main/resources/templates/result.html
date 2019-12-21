@@ -56,24 +56,6 @@
             </div>
         </div>
     </body>
-    <script th:inline="javascript">
-        var objects = [[${object}]]
-        console.log(objects)
-        var pageSize = 100
-        function paging(pageNum){
-            var content = $('#content')
-            content.empty()
-            for (var i = pageNum * pageSize; i < (pageNum+1)*pageSize && objects.length; i++){
-                var tr = $("<tr></tr>")
-                for (var j = 0; j < objects[i].length; j++){
-                    var td = $("<td></td>").text(objects[i][j])
-                    tr.append(td)
-                }
-                content.append(tr)
-            }
-        }
-        paging(0)
-    </script>
     <script>
         window.onload = function () {
 
@@ -124,5 +106,23 @@
                 }
             });
         }
+    </script>
+    <script th:inline="javascript">
+        var objects = [[${object}]]
+        console.log(objects)
+        var pageSize = 100
+        function paging(pageNum){
+            var content = $('#content')
+            content.empty()
+            for (var i = pageNum * pageSize; i < (pageNum+1)*pageSize && i < objects.length; i++){
+                var tr = $("<tr></tr>")
+                for (var j = 0; j < objects[i].length; j++){
+                    var td = $("<td></td>").text(objects[i][j])
+                    tr.append(td)
+                }
+                content.append(tr)
+            }
+        }
+        paging(0)
     </script>
 </html>
